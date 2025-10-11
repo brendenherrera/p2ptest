@@ -1,0 +1,27 @@
+* {
+    overflow: hidden;
+
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #101820;
+  color: white;
+}
+
+#connection {
+  margin: 20px;
+}
+
+#connection.create-btn {
+    color: #ff0000;
+    flex: auto;
+}
+
+canvas {
+  border: 2px solid white;
+  background: #222;
+  display: block;
+  margin: 0 auto;
+}

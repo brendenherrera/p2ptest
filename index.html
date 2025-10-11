@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>P2P Ping Pong</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>P2P Ping Pong 🏓</h1>
+
+  <div id="connection">
+    <button id="create-btn">Create Game</button>
+    <input id="peer-id-input" placeholder="Enter Peer ID to join">
+    <button id="join-btn">Join Game</button>
+    <p>Your ID: <span id="my-id"></span></p>
+    <p>Status: <span id="status">Not connected</span></p>
+  </div>
+
+  <canvas id="gameCanvas" width="600" height="400"></canvas>
+
+  <!-- PeerJS CDN -->
+  <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
