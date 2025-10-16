@@ -1,27 +1,71 @@
 * {
-    overflow: hidden;
-
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 body {
+  background-color: #222;
   font-family: sans-serif;
+  color: #fff;
   text-align: center;
-  background: #101820;
-  color: white;
 }
 
-#connection {
+button {
+  border: none;
+  color: white;
+  padding: 4px 9px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #75617e;
+  border-radius: 4px;
+  flex: auto;
+}
+
+button:hover {
+  background-color: #594873;
+}
+
+input {
+  border: transparent;
+  color: white;
+  background-color: #75617e;
+  padding: 4px;
+  margin: 0px 5px;
+  border-radius: 4px;
+}
+
+::placeholder {
+  color: #999;
+}
+
+input:focus {
+  outline: none;
+}
+
+.container {
+  background-color: #2c2538;
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: 0px auto;
+  outline: 1px solid #fff;
+}
+
+#connect-options {
   margin: 20px;
 }
 
-#connection.create-btn {
-    color: #ff0000;
-    flex: auto;
+#score-panel {
+  font-size: 30;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
-
-canvas {
-  border: 2px solid white;
-  background: #222;
-  display: block;
-  margin: 0 auto;
+#host-score, #client-score {
+  display: inline-block;
+  width: 50px;
 }
